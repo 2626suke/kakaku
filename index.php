@@ -12,10 +12,7 @@
 </form>
 <?php
 
-//Enter your IDs
-define("Associate_tag", "nimu1984-22"); // アソシエイトタグ
-define("Access_Key_ID", "AKIAIL75KIQTMOVDFZ3Q"); // アクセスキー
-define("Secret_Access_Key", "tSrncsDtoV5/SdgzM4nLG5/5huStsMqey5/AOWd9"); // シークレットキー
+require("config.php");
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     ItemSearch("Electronics", $_POST["name"]); // Videosを選択、「アナと雪の女王」は好きなキーワードを選んでください。
